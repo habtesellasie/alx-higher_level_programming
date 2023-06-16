@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module contains a class to serve as base for other classes"""
+"""This module has a class to serve as base for the other classes"""
 
 
 import csv
@@ -9,7 +9,7 @@ import turtle
 
 
 class Base:
-    """Represents base of all classes created """
+    """Represents base for all classes created """
 
     __nb_objects = 0
 
@@ -119,24 +119,6 @@ class Base:
     @classmethod
     def load_from_file_csv(cls):
         """Deserializes CSV format from a file"""
-
-        # file_name = cls.__name__ + ".csv"
-        # list_of_instances = []
-        # if os.path.exists(file_name):
-        #     with open(file_name, 'r') as my_file:
-        #         reader = csv.reader(my_file, delimiter=',')
-        #         if cls.__name__ == 'Rectangle':
-        #             records = ['id', 'width', 'height', 'x', 'y']
-        #         elif cls.__name__ == 'Square':
-        #             records = ['id', 'size', 'x', 'y']
-        #         for i, row in enumerate(reader):
-        #             if i > 0:
-        #                 x = cls(1, 1)
-        #                 for j, y in enumerate(row):
-        #                     if y:
-        #                         setattr(x, records[j], int(y))
-        #                 list_of_instances.append(x)
-        # return list_of_instances
 
         filename = cls.__name__ + ".csv"
         try:
