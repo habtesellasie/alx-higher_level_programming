@@ -1,2 +1,3 @@
-##alx-higher_level_programming
-python, sql so far
+# alx-higher_level_programming
+
+> python, sql and javascript
